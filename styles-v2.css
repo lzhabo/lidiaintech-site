@@ -1070,6 +1070,97 @@ a { color: inherit; }
   border-radius: 999px;
   margin-top: auto;
 }
+.proof .tw .tw-link {
+  display: flex; flex-direction: column; gap: 12px;
+  text-decoration: none; color: inherit;
+}
+.proof .tw .tw-link:hover .tw-readmore .arrow { transform: translate(2px, -2px); }
+.proof .tw .tw-body {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+  margin: 0;
+  letter-spacing: -0.005em;
+}
+.proof .tw .tw-metrics {
+  display: flex; gap: 18px; flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-mute);
+  padding-top: 14px;
+  border-top: 1px solid var(--hair);
+}
+.proof .tw .tw-metrics strong {
+  color: var(--ink);
+  font-weight: 500;
+  margin-right: 4px;
+}
+.proof .tw .tw-readmore {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.proof .tw .tw-readmore .arrow {
+  display: inline-block;
+  transition: transform 220ms ease;
+}
+
+.proof .tw-quote .tt-link {
+  display: flex; flex-direction: column; gap: 18px;
+  text-decoration: none; color: inherit;
+}
+.proof .tw-quote .tt-link:hover .arrow { transform: translate(2px, -2px); }
+.proof .tw-quote .tt-link:hover .tt-play { transform: scale(1.06); }
+.proof .tw-quote .tt-watch {
+  display: inline-flex; align-items: center; gap: 12px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-top: auto;
+}
+.proof .tw-quote .tt-watch .arrow {
+  display: inline-block;
+  transition: transform 220ms ease;
+  font-size: 14px;
+}
+.proof .tw-quote .tt-play {
+  display: inline-grid; place-items: center;
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  transition: transform 220ms ease;
+  flex-shrink: 0;
+}
+.proof .tw-quote .tt-play svg {
+  width: 14px; height: 14px;
+  margin-left: 2px;
+}
+.proof .tw-quote .tt-metrics {
+  display: flex; gap: 18px; flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  color: var(--ink-soft);
+  padding-top: 14px;
+  border-top: 1px solid rgba(26,26,26,0.18);
+}
+.proof .tw-quote .tt-metrics strong {
+  color: var(--ink);
+  font-weight: 500;
+  margin-right: 4px;
+}
+
 .proof .tw-quote {
   background: var(--pastel-yellow);
   mix-blend-mode: normal;
@@ -1157,7 +1248,7 @@ a { color: inherit; }
   padding-top: 32px;
   border-top: 1px solid var(--hair);
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 0;
   position: relative; z-index: 2;
 }

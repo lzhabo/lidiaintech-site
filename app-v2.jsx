@@ -98,7 +98,7 @@ function Topbar() {
     <header className="topbar">
       <div className="brand">
         <span className="mark"></span>
-        <span>Lidia</span>
+        <span>Lidia Zhabo</span>
       </div>
       <nav>
         <a href="#about">About</a>
@@ -755,28 +755,53 @@ function Proof() {
       </article>
 
       <article className="card tw">
-        <div className="top"><span>X · Thread</span><span>4.8K likes</span></div>
-        <h5>How auth handshakes really work — in 11 tweets.</h5>
-        <div className="tweet">
-          <div className="row">
-            <div className="avatar" />
-            <div>
-              <div className="name">Lidia</div>
-              <div className="handle">@lidiaintech · 3d</div>
+        <div className="top"><span>X · DEVREL PHILOSOPHY</span><span>1.6K views</span></div>
+        <a className="tw-link" href="https://x.com/lidiaintech/status/2049965145091150165" target="_blank" rel="noreferrer">
+          <div className="tweet">
+            <div className="row">
+              <div className="avatar" />
+              <div>
+                <div className="name">Lidia</div>
+                <div className="handle">@lidiaintech · Apr 30</div>
+              </div>
+            </div>
+            <p className="tw-body">
+              This image perfectly visualizes why I became a Developer Advocate.
+              In tech, we have millions of brilliant engineers building incredible
+              Lego blocks: complex APIs, smart contracts, infrastructure.
+              But the problem is, nobody falls in love with a chaotic pile of
+              plastic bricks.
+            </p>
+            <div className="tw-metrics">
+              <span><strong>20</strong> Likes</span>
+              <span><strong>7</strong> Reposts</span>
+              <span><strong>1.6K</strong> Views</span>
             </div>
           </div>
-          <div className="line m" />
-          <div className="line s" />
-          <div className="line m" />
-          <span className="embed-tag">[ twitter embed ]</span>
-        </div>
-        <div className="meta"><span>Quoted by @vercel</span><span>Mar 2026</span></div>
+          <span className="tw-readmore">Read full thread <span className="arrow">↗</span></span>
+        </a>
+        <div className="meta"><span>x.com/lidiaintech</span><span>Apr 30, 2026</span></div>
       </article>
 
       <article className="card tw-quote">
-        <div className="top"><span>X · Reply</span><span>22K likes</span></div>
-        <div className="quote">"Read this thread and refactored my whole gateway. Owe you a beer."</div>
-        <div className="meta"><span>@dhh · quote-tweet</span><span>Feb 2026</span></div>
+        <div className="top"><span>TIKTOK · TECH SHORT</span><span>20K+ views</span></div>
+        <a className="tt-link" href="https://www.tiktok.com/@lidiaintech/video/7628367341838961953" target="_blank" rel="noreferrer">
+          <p className="quote">
+            "How Hackers Bypass Passwords & 2FA 🍪 #SystemDesign #Cybersecurity"
+          </p>
+          <span className="tt-watch">
+            <span className="tt-play" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z" /></svg>
+            </span>
+            Watch video
+            <span className="arrow">↗</span>
+          </span>
+        </a>
+        <div className="tt-metrics">
+          <span><strong>1K</strong> Likes</span>
+          <span><strong>305</strong> Saves</span>
+        </div>
+        <div className="meta"><span>Lidia in Tech (@lidiaintech)</span><span>tiktok.com</span></div>
       </article>
     </section>);
 
@@ -791,8 +816,8 @@ function Footer() {
       <div className="ambient-halftone" />
 
       <h2>
-        Need a DevRel without<br />
-        the full-time overhead? <em>Let's talk.</em>
+        Need a DevRel?<br />
+         <em>Let's talk.</em>
       </h2>
 
       <div className="cta-cluster">
@@ -834,6 +859,14 @@ function Footer() {
           </span>
           <span className="platform sr-only">Telegram</span>
           <span className="handle">@kakdelaldiok</span>
+          <span className="arrow">↗</span>
+        </a>
+        <a href="https://www.tiktok.com/@lidiaintech" target="_blank" rel="noreferrer">
+          <span className="icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"><path d="M14 3 L14 15.2 a3.8 3.8 0 1 1 -3.8 -3.8 M14 3 c0.4 2.4 2.2 4.2 4.6 4.6" /></svg>
+          </span>
+          <span className="platform sr-only">TikTok</span>
+          <span className="handle">@lidiaintech</span>
           <span className="arrow">↗</span>
         </a>
       </div>
