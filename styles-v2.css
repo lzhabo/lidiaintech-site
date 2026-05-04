@@ -904,10 +904,14 @@ a { color: inherit; }
 /* ===== Proof of Work ===== */
 .proof {
   display: grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: minmax(360px, 0.85fr) minmax(0, 1.15fr);
   gap: 48px;
   padding: 24px 56px 120px;
+  align-items: start;
 }
+.proof > .tw-quote { grid-column: 1; grid-row: 1 / span 2; }
+.proof > .yt       { grid-column: 2; grid-row: 1; }
+.proof > .tw       { grid-column: 2; grid-row: 2; }
 .proof .card {
   border: 1px solid var(--hair);
   border-radius: 8px;
@@ -948,7 +952,9 @@ a { color: inherit; }
 }
 
 /* youtube card */
-.proof .yt { grid-row: span 2; }
+.proof .yt {
+  align-self: start;
+}
 .proof .yt .video {
   flex: 1;
   min-height: 320px;
@@ -958,6 +964,7 @@ a { color: inherit; }
   overflow: hidden;
   mix-blend-mode: normal;
   display: grid; place-items: center;
+  aspect-ratio: 16 / 9;
 }
 .proof .yt .video::before {
   content: ""; position: absolute; inset: 0;
@@ -1111,6 +1118,39 @@ a { color: inherit; }
   display: inline-block;
   transition: transform 220ms ease;
 }
+
+.proof .tw-quote .tt-video {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  position: relative;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(26,26,26,0.12);
+  padding: 16px 8px;
+  min-height: 560px;
+  overflow: hidden;
+}
+.proof .tw-quote .tt-video .tiktok-embed {
+  position: relative;
+  z-index: 2;
+  margin: 0 !important;
+  background: transparent !important;
+}
+.proof .tw-quote .tt-video iframe {
+  border-radius: 8px;
+}
+.proof .tw-quote .meta-link {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid var(--ink);
+  transition: opacity 220ms ease;
+}
+.proof .tw-quote .meta-link:hover { opacity: 0.7; }
 
 .proof .tw-quote .tt-link {
   display: flex; flex-direction: column; gap: 18px;
@@ -1320,6 +1360,7 @@ a { color: inherit; }
   .narrative { grid-template-columns: 1fr; gap: 56px; padding: 24px 32px 80px; }
   .expertise { grid-template-columns: 1fr; padding: 24px 32px 80px; }
   .proof { grid-template-columns: 1fr; padding: 24px 32px 80px; }
+  .proof > .tw-quote, .proof > .yt, .proof > .tw { grid-column: 1; grid-row: auto; }
   .proof .yt { grid-row: auto; }
   .footer { padding: 72px 32px 40px; }
   .socials { grid-template-columns: repeat(2, 1fr); gap: 28px 0; }

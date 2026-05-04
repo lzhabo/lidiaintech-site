@@ -738,6 +738,31 @@ function ProofHead() {
 function Proof() {
   return (
     <section className="proof">
+      <article className="card tw-quote">
+        <div className="top"><span>TIKTOK · TECH SHORT</span><span>20K+ views</span></div>
+        <h5>"How Hackers Bypass Passwords & 2FA 🍪"</h5>
+        <div className="tt-video">
+          <blockquote
+            className="tiktok-embed"
+            cite="https://www.tiktok.com/@lidiaintech/video/7628367341838961953"
+            data-video-id="7628367341838961953"
+            style={{ maxWidth: '325px', minWidth: '325px' }}>
+            <section>
+              <a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@lidiaintech/video/7628367341838961953">@lidiaintech</a>
+            </section>
+          </blockquote>
+        </div>
+        <div className="tt-metrics">
+          <span><strong>1K</strong> Likes</span>
+          <span><strong>305</strong> Saves</span>
+          <span><strong>20K+</strong> Views</span>
+        </div>
+        <div className="meta">
+          <span>@lidiaintech · #SystemDesign #Cybersecurity</span>
+          <a href="https://www.tiktok.com/@lidiaintech/video/7628367341838961953" target="_blank" rel="noreferrer" className="meta-link">Open on TikTok ↗</a>
+        </div>
+      </article>
+
       <article className="card yt">
         <div className="top"><span>YouTube · Featured</span><span>500 views</span></div>
         <h5>"The Complete AI Map (Every Term Explained in 7 Minutes)"</h5>
@@ -745,11 +770,10 @@ function Proof() {
           <iframe
             className="yt-embed"
             src="https://www.youtube.com/embed/7AdZsPiBAuI?start=250&modestbranding=1&rel=0"
-            title="Lidia — Postgres talk"
+            title="Lidia — The Complete AI Map"
             frameBorder="0"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen />
-          
         </div>
         <div className="meta"><span>youtube.com/@lidiaintech</span><span>Apr 2026</span></div>
       </article>
@@ -781,27 +805,6 @@ function Proof() {
           <span className="tw-readmore">Read full thread <span className="arrow">↗</span></span>
         </a>
         <div className="meta"><span>x.com/lidiaintech</span><span>Apr 30, 2026</span></div>
-      </article>
-
-      <article className="card tw-quote">
-        <div className="top"><span>TIKTOK · TECH SHORT</span><span>20K+ views</span></div>
-        <a className="tt-link" href="https://www.tiktok.com/@lidiaintech/video/7628367341838961953" target="_blank" rel="noreferrer">
-          <p className="quote">
-            "How Hackers Bypass Passwords & 2FA 🍪 #SystemDesign #Cybersecurity"
-          </p>
-          <span className="tt-watch">
-            <span className="tt-play" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5 L19 12 L8 19 Z" /></svg>
-            </span>
-            Watch video
-            <span className="arrow">↗</span>
-          </span>
-        </a>
-        <div className="tt-metrics">
-          <span><strong>1K</strong> Likes</span>
-          <span><strong>305</strong> Saves</span>
-        </div>
-        <div className="meta"><span>Lidia in Tech (@lidiaintech)</span><span>tiktok.com</span></div>
       </article>
     </section>);
 
