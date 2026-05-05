@@ -1134,6 +1134,9 @@ a { color: inherit; }
   max-width: 100%;
   box-sizing: border-box;
 }
+.proof .tw-quote .tt-video > * {
+  max-width: 100% !important;
+}
 .proof .tw-quote .tt-video .tiktok-embed {
   position: relative;
   z-index: 2;
@@ -1146,6 +1149,7 @@ a { color: inherit; }
 .proof .tw-quote .tt-video iframe {
   border-radius: 8px;
   max-width: 100% !important;
+  width: 100% !important;
 }
 .proof .tw-quote .meta-link {
   font-family: var(--font-mono);
@@ -1369,9 +1373,12 @@ a { color: inherit; }
   .composition { min-height: 520px; }
   .narrative { grid-template-columns: 1fr; gap: 56px; padding: 24px 32px 80px; }
   .expertise { grid-template-columns: 1fr; padding: 24px 32px 80px; }
-  .proof { grid-template-columns: 1fr; padding: 24px 32px 80px; }
-  .proof > .tw-quote, .proof > .yt, .proof > .tw { grid-column: 1; grid-row: auto; }
+  .proof { grid-template-columns: 1fr; padding: 24px 20px 80px; gap: 32px; }
+  .proof > .tw-quote, .proof > .yt, .proof > .tw { grid-column: 1; grid-row: auto; min-width: 0; }
   .proof .yt { grid-row: auto; }
+  .proof .card { padding: 16px; min-width: 0; overflow: hidden; }
+  .proof .tw-quote .tt-video { min-height: 740px; padding: 12px 4px; }
+  .proof .tw-quote .tt-video .tiktok-embed { width: 100% !important; max-width: 325px !important; }
   .footer { padding: 72px 32px 40px; }
   .socials { grid-template-columns: repeat(2, 1fr); gap: 28px 0; }
   .socials a:nth-child(2) { border-right: none; }

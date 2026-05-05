@@ -838,7 +838,6 @@ function Footer() {
           </span>
           <span className="platform sr-only">X</span>
           <span className="handle">@lidiaintech</span>
-          <span className="arrow">↗</span>
         </a>
         <a href="https://youtube.com/@lidiaintech" target="_blank" rel="noreferrer">
           <span className="icon" aria-hidden="true">
@@ -846,7 +845,6 @@ function Footer() {
           </span>
           <span className="platform sr-only">YouTube</span>
           <span className="handle">@lidiaintech</span>
-          <span className="arrow">↗</span>
         </a>
         <a href="https://github.com/lzhabo" target="_blank" rel="noreferrer">
           <span className="icon" aria-hidden="true">
@@ -854,7 +852,6 @@ function Footer() {
           </span>
           <span className="platform sr-only">GitHub</span>
           <span className="handle">/lzhabo</span>
-          <span className="arrow">↗</span>
         </a>
         <a href="https://t.me/kakdelaldiok" target="_blank" rel="noreferrer">
           <span className="icon" aria-hidden="true">
@@ -862,7 +859,6 @@ function Footer() {
           </span>
           <span className="platform sr-only">Telegram</span>
           <span className="handle">@kakdelaldiok</span>
-          <span className="arrow">↗</span>
         </a>
         <a href="https://www.tiktok.com/@lidiaintech" target="_blank" rel="noreferrer">
           <span className="icon" aria-hidden="true">
@@ -870,7 +866,6 @@ function Footer() {
           </span>
           <span className="platform sr-only">TikTok</span>
           <span className="handle">@lidiaintech</span>
-          <span className="arrow">↗</span>
         </a>
       </div>
 
