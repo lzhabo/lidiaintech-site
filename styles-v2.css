@@ -1130,15 +1130,22 @@ a { color: inherit; }
   padding: 16px 8px;
   min-height: 560px;
   overflow: hidden;
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 .proof .tw-quote .tt-video .tiktok-embed {
   position: relative;
   z-index: 2;
   margin: 0 !important;
   background: transparent !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  width: 325px !important;
 }
 .proof .tw-quote .tt-video iframe {
   border-radius: 8px;
+  max-width: 100% !important;
 }
 .proof .tw-quote .meta-link {
   font-family: var(--font-mono);
@@ -1337,8 +1344,11 @@ a { color: inherit; }
 .socials a .arrow {
   display: inline-block;
   margin-top: 14px;
-  font-size: 18px;
+  font-size: 16px;
+  font-family: var(--font-mono);
+  font-variant-emoji: text;
   transition: transform 220ms ease;
+  color: var(--ink-mute);
 }
 
 .colophon {
