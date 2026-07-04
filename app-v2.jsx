@@ -121,16 +121,15 @@ function Hero() {
   return (
     <section className="hero" id="about">
       <div className="left">
-        <span className="eyebrow">Developer Advocate · Writer · Engineer</span>
+        <span className="eyebrow">Developer Growth · Content · Metrics</span>
         <h1>
-          Most protocols look like a{" "}
-          <em>pile of raw data.</em>{" "}
-          <span className="quiet">I build the story around it.</span>
+          I help developers fall in love with{" "}
+          <em>complex tech</em>{" "}
+          <span className="quiet">— then prove it worked.</span>
         </h1>
         <p className="sub">
-          I am a Full-Stack Engineer turned Developer Advocate. I translate your
-          complex system architecture into content and communities that
-          developers actually love.
+          Developer Growth: content that converts, onboarding that sticks,
+          metrics that prove it. 240K+ YouTube views, ex-CTO/co-founder.
         </p>
         <div className="cta-cluster">
           <a className="btn-soft" href="mailto:kakdelalidok@gmail.com">
@@ -188,7 +187,7 @@ function Marquee() {
   "Translation, not transcription",
   "Onboarding that respects your time",
   "Receipts, not promises",
-  "DevRel for grown-up engineering teams"];
+  "Developer Growth for grown-up engineering teams"];
 
   return (
     <div className="marquee" aria-hidden="true">
@@ -212,8 +211,8 @@ function NarrativeHead() {
     <div className="section-head">
       <div className="num">02 / The Thesis</div>
       <div>
-        <h2>Code is just data. <em>Developers buy clarity.</em></h2>
-        <p className="lede">A short note on why most great SDKs go quietly unused.</p>
+        <h2>Most developer content stops at likes. <em>I measure adoption.</em></h2>
+        <p className="lede">A short note on running developer growth as a measurable function.</p>
       </div>
     </div>);
 
@@ -225,10 +224,10 @@ function Narrative() {
       <div className="copy">
         <h3>Having a great SDK isn't enough if onboarding takes <em>three days.</em></h3>
         <p>
-          I take your raw engineering docs and wrap them in a human-readable
-          narrative — the thing a senior dev forwards to their team Slack at
-          11pm because it actually explains what the protocol is for, not just
-          how to call it.
+          Content is the top of the funnel. Onboarding is the conversion.
+          Community is the retention. I track all three — from first YouTube
+          view to first API call to first shipped integration. Developer Growth
+          doesn't have to be a cost center. I run it like a growth function.
         </p>
         <div className="pullquote">
           "The iceberg under your API is the product. My job is to draw the iceberg."
@@ -665,7 +664,7 @@ function ExpertiseHead() {
     <div className="section-head" id="expertise">
       <div className="num">03 / Expertise</div>
       <div>
-        <h2>How I can help <em>your protocol</em> grow.</h2>
+        <h2>How I drive <em>developer adoption</em>.</h2>
         <p className="lede">Four overlapping practices. Mix as needed — I retainer or one-off.</p>
       </div>
     </div>);
@@ -677,30 +676,30 @@ function Expertise() {
   {
     cls: "e1",
     num: "01",
-    title: "Developer Video Content",
-    body: "Scripts, technical tutorials, and YouTube strategy. From architecture breakdowns to SDK reviews — I ship dev-facing video that doesn't read like a marketing ad.",
-    tags: ["Long-form", "Shorts", "Storyboard", "Thumbnails", "Captions"]
+    title: "Developer Content",
+    body: "Scripts, technical tutorials, and YouTube strategy. From architecture breakdowns to SDK walkthroughs — dev-facing video that drives signups, not just views.",
+    tags: ["Long-form", "Shorts", "Storyboard", "Thumbnails", "Analytics"]
   },
   {
     cls: "e2",
     num: "02",
-    title: "Technical Deep-Dives",
-    body: "Turning dense whitepapers and docs into engaging social threads and blog essays. I read the source code so your users don't have to.",
-    tags: ["Threads", "Blog", "Whitepapers", "Diagrams"]
+    title: "Technical Writing",
+    body: "Turning dense whitepapers into engaging threads, blogs, and docs. I read the source code so your users don't have to — and track which pieces convert readers into builders.",
+    tags: ["Threads", "Blog", "Whitepapers", "Diagrams", "SEO"]
   },
   {
     cls: "e3",
     num: "03",
-    title: "Developer Experience (DX)",
-    body: "Auditing SDKs, fixing docs, and smoothing the first 15 minutes of onboarding. I find where developers bounce — and fix it.",
-    tags: ["Audit", "Quickstart", "Error copy", "CLI UX"]
+    title: "Developer Experience",
+    body: "Auditing SDKs, fixing quickstarts, smoothing the first 15 minutes. I find where developers bounce and fix it. Measured in time-to-first-API-call.",
+    tags: ["Audit", "Quickstart", "Error copy", "CLI UX", "Funnel"]
   },
   {
     cls: "e4",
     num: "04",
-    title: "Community & Feedback Loops",
-    body: "Managing developer communities, running technical AMAs, and bridging the gap between users and engineering.",
-    tags: ["Discord", "AMAs", "Office hours", "Issue triage"]
+    title: "Community & Growth",
+    body: "Running developer communities that aren't ghost towns. AMAs, office hours, issue triage — plus feedback loops that reach the engineering team.",
+    tags: ["Discord", "AMAs", "Office hours", "Issue triage", "Metrics"]
   }];
 
   return (
@@ -779,7 +778,7 @@ function Proof() {
       </article>
 
       <article className="card tw">
-        <div className="top"><span>X · DEVREL PHILOSOPHY</span><span>1.6K views</span></div>
+        <div className="top"><span>X · GROWTH PHILOSOPHY</span><span>1.6K views</span></div>
         <a className="tw-link" href="https://x.com/lidiaintech/status/2049965145091150165" target="_blank" rel="noreferrer">
           <div className="tweet">
             <div className="row">
@@ -819,7 +818,7 @@ function Footer() {
       <div className="ambient-halftone" />
 
       <h2>
-        Need a DevRel?<br />
+        Need Developer Growth?<br />
          <em>Let's talk.</em>
       </h2>
 
