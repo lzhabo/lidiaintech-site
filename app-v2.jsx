@@ -127,8 +127,8 @@ function Hero() {
       <div className="left">
         <span className="eyebrow">Lidia Zhabo · Lisbon, Portugal (EU)</span>
         <h1>
-          I make complex technology <em>irresistible</em>{" "}
-          <span className="quiet">to developers — then measure it.</span>
+          I make developer tools <em>people actually use</em>{" "}
+          <span className="quiet">— then measure it.</span>
         </h1>
         <p className="sub">Developer Relations &amp; AI Developer Advocate.</p>
 
@@ -136,7 +136,7 @@ function Hero() {
           <a href="https://linkedin.com/in/lidia-zhabo" target="_blank" rel="noreferrer">LinkedIn</a>
           <a href="https://github.com/lzhabo" target="_blank" rel="noreferrer">GitHub</a>
           <a href="https://youtube.com/@lidiaintech" target="_blank" rel="noreferrer">YouTube</a>
-          <a href="mailto:kakdelalidok@gmail.com">kakdelalidok@gmail.com</a>
+          <a href="mailto:kakdelalidok@gmail.com">Email</a>
         </div>
 
         <div className="cta-cluster">
