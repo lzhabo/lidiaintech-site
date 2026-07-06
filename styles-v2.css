@@ -16,6 +16,7 @@
   --pastel-rose: #EBD3D0;
   --pastel-mint: #CFE3D6;
   --accent: var(--pastel-blue);
+  --accent-solid: #2563eb;
 
   --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-serif: "Fraunces", "Times New Roman", serif;
@@ -37,6 +38,8 @@ html, body {
 }
 
 a { color: inherit; }
+a.inline-link, .narrative .copy p a, .open-roles p a { color: var(--accent-solid); text-decoration-color: rgba(37,99,235,0.4); }
+a.inline-link:hover, .narrative .copy p a:hover, .open-roles p a:hover { text-decoration-color: var(--accent-solid); }
 
 /* halftone utility — used on overlay blocks */
 .halftone {
@@ -146,6 +149,20 @@ a { color: inherit; }
   color: var(--ink-soft);
   font-weight: 400;
 }
+
+.hero-links {
+  display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+}
+.hero-links a {
+  text-decoration: none;
+  color: var(--ink-soft);
+  border-bottom: 1px solid transparent;
+  transition: color 160ms ease, border-color 160ms ease;
+}
+.hero-links a:hover { color: var(--accent-solid); border-color: var(--accent-solid); }
 
 .cta-cluster { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
 
@@ -449,6 +466,51 @@ a { color: inherit; }
   background: var(--accent);
   border-radius: 50%;
   mix-blend-mode: multiply;
+}
+
+/* ----- Open to Roles callout ----- */
+.open-roles {
+  align-self: start;
+  border: 1px solid var(--hair-strong);
+  border-top: 3px solid var(--accent-solid);
+  border-radius: 8px;
+  background: var(--paper-2);
+  padding: 28px 26px;
+  display: flex; flex-direction: column; gap: 14px;
+  max-width: 46ch;
+}
+.open-roles-tag {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.open-roles-tag .pulse-dot {
+  width: 7px; height: 7px; border-radius: 50%;
+  background: var(--accent-solid);
+  position: relative;
+}
+.open-roles-tag .pulse-dot::after {
+  content: ""; position: absolute; inset: -4px;
+  border-radius: 50%;
+  border: 1px solid var(--accent-solid);
+  opacity: 0.5;
+  animation: pulse 2s ease-out infinite;
+}
+.open-roles p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.open-roles-meta {
+  font-family: var(--font-mono) !important;
+  font-size: 12px !important;
+  letter-spacing: 0.04em;
+  color: var(--ink-mute) !important;
+  line-height: 1.5 !important;
 }
 
 /* ===== The Data Sorting Algorithm — animated figure ===== */
@@ -832,8 +894,8 @@ a { color: inherit; }
 /* ===== Expertise grid ===== */
 .expertise {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 48px 64px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px 40px;
   padding: 24px 56px 120px;
 }
 .expertise .item {
@@ -1299,9 +1361,10 @@ a { color: inherit; }
   padding-top: 32px;
   border-top: 1px solid var(--hair);
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 0;
   position: relative; z-index: 2;
+  max-width: 640px;
 }
 .socials a {
   text-decoration: none;
@@ -1373,6 +1436,8 @@ a { color: inherit; }
   .composition { min-height: 520px; }
   .narrative { grid-template-columns: 1fr; gap: 56px; padding: 24px 32px 80px; }
   .expertise { grid-template-columns: 1fr; padding: 24px 32px 80px; }
+  .narrative { align-items: start; }
+  .open-roles { max-width: none; }
   .proof { grid-template-columns: 1fr; padding: 24px 20px 80px; gap: 32px; }
   .proof > .tw-quote, .proof > .yt, .proof > .tw { grid-column: 1; grid-row: auto; min-width: 0; }
   .proof .yt { grid-row: auto; }
@@ -1380,7 +1445,7 @@ a { color: inherit; }
   .proof .tw-quote .tt-video { min-height: 740px; padding: 12px 4px; }
   .proof .tw-quote .tt-video .tiktok-embed { width: 100% !important; max-width: 325px !important; }
   .footer { padding: 72px 32px 40px; }
-  .socials { grid-template-columns: repeat(2, 1fr); gap: 28px 0; }
+  .socials { grid-template-columns: repeat(2, 1fr); gap: 28px 0; max-width: none; }
   .socials a:nth-child(2) { border-right: none; }
   .topbar { padding: 18px 32px; gap: 18px; flex-wrap: wrap; }
   .topbar nav { display: none; }
